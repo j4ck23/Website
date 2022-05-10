@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Tech House</title>
+
+<link href="new 1.css" rel="stylesheet" type="text/css" />
+<div id="background">
+	<!-- This is the Code for the Top of the page-->
+	<div class="flex-container" id="myHeader">
+		<header>	Account		Options		CheckOut</header>
+	</div>
+	
+	<!-- This is the title and image of the page-->
+	<div class="flex-container">
+	<img src="logo.jpg" alt="Tech House Logo"  href="#Home" img></IMG>
+    <div class="flex-container1">
+	  	<name>Tech House</name>
+	</div>
+	</div>
+	
+	<!-- This is the nav bar-->
+	<div class="flex-container2">
+	<Nav>
+	<li><a href="#home">Home</a></li>
+	<li><a href="#Jobs">Jobs</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sales</a><!--This is the drop down list-->
+		<div class="dropdown-content"><!--These are the items inside the list-->
+		<a href="#Games">Games</a>
+		<a href="#Tech">Tech</a>
+		<a href="#Other">Other</a>
+		</div><!--All of the items in this class are linked through href to there pages-->
+	<li><a href="#Workshop">Workshop</a></li>
+	</li>
+	</Nav>
+	</div>
+	</head>
+	
+	<body>
+		<div class="flex-container">
+			<Bod>Hi</Bod>
+			<Bod>hi</Bod>
+		</div>
+		
+		<div class="flex-container">
+			<Bod>Hi</Bod>
+			<Bod>hi</Bod>
+		</div>
+		
+		<div class="flex-container">
+			<Bod>Hi</Bod>
+			<Bod>hi</Bod>
+		</div>
+		
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<img src="Controller.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="Game Case.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="keyboard.jpg" style="width:100%">>
+		</div>
+		
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+	</body>
+<script>
+<!--This is for the header and allows it to croll down the page with you-->
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+</div>
+</html>

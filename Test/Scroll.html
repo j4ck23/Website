@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<div class="wrap" id="wrap">
+  
+  <header class="top-header">
+    <span class="menu-icon">☰</span>
+  </header>
+  
+  <div class="search">
+    <input type="search" placeholder="Search or type URL" />
+  </div>
+  
+  <div class="top">
+    <div class="hero"></div>
+  </div>
+  
+  <main>
+    <div>147</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div></div>
+    <div>1</div>
+    <div>1</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </main>
+  
+</div>
+<script>
+var wrap = $("#wrap");
+
+wrap.on("scroll", function(e) {
+    
+  if (this.scrollTop > 147) {
+    wrap.addClass("fix-search");
+  } else {
+    wrap.removeClass("fix-search");
+  }
+  
+});
+</script>
+</html>

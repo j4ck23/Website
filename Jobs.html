@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Tech House</title>
+
+<link href="Tech house.css" rel="stylesheet" type="text/css" />
+<div id="background">
+	<!-- This is the Code for the Top of the page-->
+	<div class="flex-container" id="myHeader">
+		<header>
+		Account	
+		Options		
+		CheckOut</header>
+	</div>
+	
+	<!-- This is the title and image of the page-->
+	<div class="flex-container">
+	<a href="Home Page.html" style="text-decoration: none">
+	<img src="All Pages/logo.jpg" alt="Tech House Logo"  href="Home Page.html" img></IMG>
+	</a>
+    <div class="flex-container1">
+	  	<name>Tech House</name>
+	</div>
+	</div>
+	
+	<!-- This is the nav bar-->
+	<div class="flex-container2">
+	<Nav>
+	<li><a href="Home Page.html">Home</a></li>
+	<li><a href="Jobs.html">Jobs</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sales</a><!--This is the drop down list-->
+		<div class="dropdown-content"><!--These are the items inside the list-->
+		<a href="Sales Page(Games).html">Games</a>
+		<a href="Sales Page(Tech).html">Tech</a>
+		<a href="Sales Page(Other).html">Other</a>
+		</div><!--All of the items in this class are linked through href to there pages-->
+	<li><a href="WorkShop.html">Workshop</a></li>
+	</li>
+	</Nav>
+	</div>
+	</head>
+	<body>
+	<!--This is where the video for the job will be played, containg a quick overview of the job and 
+	what it is about, NOTE i have used a filler video here and will not be used for the live website.-->
+		<div class="flex-container">
+			<Video width="400" height="400" controls><source src="filler.mp4" type="video/mp4"></Video>
+		</div>
+		
+		<div class="flex-container">
+			<req>The Requirements
+			<br>
+			Good Communication skills, A team player, calm under pressure. This are the biggest skills
+			that we look for in employees, we also ask you have a positive attitude and are always on time
+			This requirement will be assessed in exercises and interviews once applied, 
+			You DO NOT have to have previous experience though it will help. Think you got what it takes,
+			well apply today.
+			</req>
+		</div>
+		
+		<!--These are examples of Traniess that wrok for the company, inlcluding a bio and a picture-->
+		<div class="flex-container">
+			<imag><img src="Jobs/Example Female.jpg" alt="Tech House Logo" img></imag>
+			<about>My Name is Sarah and I am a trainee at Tech House, I have been working at tech house 
+			for 6 months. It has been a blast so far, I have learnt so much and I keep learning every day. 
+			I have made many new friends here and it has brought me out of my comfit zone and allowed me
+			to take on many new projects.</about>
+		</div>
+		
+		<div class="flex-container">
+			<imag><img src="Jobs/Example Male.jpg" alt="Tech House Logo" img></imag>
+			<about>Hi, my name is John, I’m 23 years old and I am a trainee at Tech House, 
+			I started working for Tech House 8 months ago and I never looked back,
+			it has been a great time and has raised my confidence a lot, 
+			it has also taught me valuable life skills which I can take on to the future with me.</about>
+		</div>
+		
+		<div class="flex-container">
+			<apply><div class="button1"><a href="Application.html" style="color:dodgerblue">Apply Now
+			</button1></a></div></apply>
+		</div>
+		<!--there are 3 sections in total-->
+		<div class="flex-container">
+			<footer>
+			<!--this is the contact section contianing detials about the page-->
+			<b><u>Contact us at:</b></u>
+			<br>
+			Email = TechHouse@gmail.com 
+			<br>
+			Phone = 12343 5439563 
+			<br>
+			Address = 13 Bakers feild lane, Darby, TY4 6LI</footer>
+			<footer>Socials:
+			<br>
+			<!--this is the social media links allowing users to access Tech Houses social media pages-->
+			<div class="Social">
+			<a href="#https://www.facebook.com/UnofficalTechHouse/" style="text-decoration: none">
+			<img src="All Pages/FaceBook Logo.jpg">
+			</a>
+			<a href="#Twitter" style="text-decoration: none">
+			<img src="All Pages/Twitter Logo.jpg"> 
+			</a>
+			<a href="#Pinterest" style="text-decoration: none">
+			<img src="All Pages/pinterest-logo.jpg"> 
+			</a>
+			<a href="#Instragram" style="text-decoration: none">
+			<img src="All Pages/Instragram logo2.jpg">
+			</a>
+			</div>
+			</footer>
+			</div>
+	</body>
+</div>	
+	
+<script>
+<!--This is for the header and allows it to croll down the page with you-->
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</div>
+</html>

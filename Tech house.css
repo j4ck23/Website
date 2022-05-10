@@ -1,0 +1,552 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* These flex-containers are my parent classes through the pages,
+They all display flex and allow me to postion boxes easier around the page.*/
+.flex-container
+{
+	display:flex;
+	min-width:500px;
+	resize:both;
+	width:100%;
+}
+
+.flex-container1
+{
+	display: flex;
+	background-color:#282828;
+	height:auto;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+	min-width:400px;
+}
+
+.flex-container2 {
+	
+	display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282828;
+	align-items: center;
+	justify-content: center;
+	min-width:650px;
+}
+
+/*This is for the header and the Java alloing it to scroll with you*/
+.sticky{
+	position:fixed;
+	top: 0;
+	width: 100%
+}
+
+/*These are the baclgourd, the first one is for all the pages and just puts a solid colour and the back
+the second one os for the home and is padded, this is to fix an issue i was having with margin*/
+#background{
+	background-color:#96150F;
+	width:100%;
+	height:100%;
+	z-index:-10;
+	}
+	
+#background2{
+	background-color:#96150F;
+	width:100%;
+	height:100%;
+	z-index:-10;
+	padding-left:10px;
+	padding-right:10px;
+	}
+
+/*These are for the heading of the page, E.G. the title and header.*/	
+.flex-container > header{
+	background-color:#282828;
+	height:auto;
+	width:100%;
+	color:white;
+	text-align:right;
+	word-spacing:10px;
+	padding-right:10px
+}
+
+.flex-container1 > name{
+	color:#96150F;
+	font-size:100px;
+	text-align:center;
+}
+
+
+.flex-container1 > IMG{
+	width:250px;
+	height:200px;
+	color:#96150F;
+}
+
+/*This next section is for the drop down menu*/
+.flex-container2 > Nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #282828;
+	font-size:40px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+	display:none;
+    display: inline-block;
+    color: White;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: None;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: Red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 86px;
+    text-decoration: none;
+    display: block;
+    text-align: Center;
+}
+
+.dropdown-content a:hover {background-color: #282828}
+
+.dropdown-content a:hover
+{
+	background-color:red;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*This is for the body of the webpages, mainly the boxes that the information is stored in*/
+.flex-container > Bod
+{
+	width:600px;
+	height:450px;
+	background-color:#282828;
+	color:white;
+	font-size:30px;
+	padding:30px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-bottom:50px;
+	justify-content:center;
+}
+
+.flex-container > Bod1
+{
+	width:500px;
+	height:450px;
+	background-color:#282828;
+	color:white;
+	font-size:20px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:120px;
+	margin-right:120px;
+	margin-bottom:50px;
+	justify-content:center;
+	text-align:center;
+}
+
+.flex-container > Bod2
+{
+	width:100%;
+	height:300px;
+	background-color:#282828;
+	color:white;
+	font-size:25px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:120px;
+	margin-right:120px;
+	margin-bottom:50px;
+	justify-content:center;
+	text-align:center;
+}
+
+.flex-container > BodI
+{
+	width:320px;
+	height:270px;
+	background-color:#282828;
+	color:white;
+	font-size:30px;
+	word-spacing:5px;
+	padding:10px;
+	margin-top:50px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-bottom:50px;
+	justify-content:center;
+}
+
+
+.button {
+    background-color: #96150F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/*This is for my Slideshow*/
+
+.slideshow-container {
+	display:flex;
+	border:2px solid black;
+	width: auto;
+	height:400px;
+	background-color:white;
+	margin-bottom:10px;
+	justify-content:center;
+	min-width:1130px;
+	word-spacing:100px;
+}
+
+.text {
+	color: black;
+	border:2px solid black;
+	background-color:white;
+	font-size: 30px;
+	padding: 8px 8px;
+	width: 100%;
+	height:auto;
+	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*This is for the footer ofmy page, the boxes and tect styles.*/
+.flex-container > footer{
+	display:flex;
+	border:2px solid black;
+	background-color:white;
+	width:100%;
+	height:100px;
+	margin:10px;
+	padding-left:10px;
+}
+
+.Social
+{
+	justify-content:center;
+	text-align:center;
+	padding-left:50px;
+	word-spacing:20px;
+}
+
+/*This is for the job page, the video is for the video box and the Other parts are for the reqs
+and about the Traniees*/
+.flex-container > Video
+{
+	width:100%;
+	height:600px;
+	background-color:#282828;
+	font-size:20px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:120px;
+	margin-right:120px;
+
+
+}
+
+.flex-container > req
+{
+	width:100%;
+	height:200px;
+	background-color:#282828;
+	font-size:20px;
+	color:white;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	word-spacing:5px;
+	margin-left:120px;
+	margin-right:120px;
+	margin-bottom:50px;
+	text-align:center;
+
+}
+
+.flex-container > Imag
+{
+	width:300px;
+	height:250px;
+	background-color:#282828;
+	color:white;
+	font-size:20px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:50px;
+
+}
+
+.flex-container > About
+{
+	width:100%;
+	height:250px;
+	background-color:#282828;
+	color:white;
+	font-size:25px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:20px;
+	margin-right:120px;
+	margin-bottom:50px;
+
+}
+
+/*These are for the apply buttons allowing users to get the application form.*/
+.flex-container > apply
+{
+	width:100%;
+	height:70px;
+	background-color:#282828;
+	color:white;
+	font-size:20px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:20px;
+    text-align:center;
+	justify-content:center;
+}
+
+.flex-container > apply1
+{
+	width:100%;
+	height:70px;
+	background-color:#282828;
+	color:white;
+	font-size:20px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:70px;
+	padding-top:70px;
+    text-align:center;
+	justify-content:center;
+}
+
+.button1 
+{
+    background-color: #282828;
+    border: none;
+    color: white;
+    padding:5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-align:center;
+	justify-content:center;
+}
+
+/*This is for the form and allows users to input into the boxes, it also allows the required field
+which means you have to fill it in.*/
+input[type=text] {
+    width: 100%;
+	height:auto;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+.BodA
+{
+	width:auto;
+	height:auto;
+	background-color:#282828;
+	color:white;
+	font-size:30px;
+	padding:30px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-bottom:50px;
+	justify-content:center;
+}
+
+/* This is then for the accpted page to simple say that the form has been accepted*/
+.flex-container > Accepted
+{
+	width:100%;
+	height:300px;
+	background-color:#282828;
+	color:white;
+	font-size:25px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:100px;
+	padding-bottom:10px;
+	word-spacing:5px;
+	margin-top:50px;
+	margin-left:120px;
+	margin-right:120px;
+	margin-bottom:50px;
+	justify-content:center;
+	text-align:center;
+	border:2px solid white;
+}
+
+#backgroundACC{
+	background-color:#96150F;
+	width:100%;
+	height:100%;
+	z-index:-10;
+	}
